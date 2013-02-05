@@ -6,9 +6,7 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'rspec-rails'
-gem 'capybara'
-gem 'guard-rspec'
+
 
 
 # Gems used only for assets and not required
@@ -29,6 +27,10 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'rb-fsevent'
 end
 
 # To use ActiveModel has_secure_password
