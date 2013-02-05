@@ -23,12 +23,19 @@ end
 
 gem 'jquery-rails'
 
+group :development, :test do
+    gem 'rspec-rails'
+  end
+
+group :test do
+  gem 'capybara'
+  gem 'factory_girl_rails'
+end
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
-  gem 'rspec-rails'
-  gem 'capybara'
   gem 'guard-rspec'
   gem 'rb-fsevent'
 end
