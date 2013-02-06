@@ -1,0 +1,19 @@
+<% content_for :title do "New Trip" end %>
+<h1>Create New Trip</h1>
+
+<%= form_for @trip do |f| -%>
+
+<%= f.hidden_field :user_id, value: @trip.user_id %>
+
+<%= f.label :name, "Trip Name" %>
+<%= f.text_field :name %>
+<br>
+<%= f.label :start_date, "Trip Start Date (mm/dd/yyyy)" %>
+<%= f.text_field :start_date %>
+<br>
+<%= f.label :end_date, "Trip End Date (mm/dd/yyyy)" %>
+<%= f.text_field :end_date %>
+<br>
+<%= f.submit "Submit" %>
+
+<% end -%>

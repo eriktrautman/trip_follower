@@ -6,4 +6,5 @@ class Trip < ActiveRecord::Base
   validates :start_date, presence: true
 
   belongs_to :user
+
 end

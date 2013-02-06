@@ -27,7 +27,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.find_by_email(params[:user][:email])
+    @user = User.find_by_id(params[:id])
     if @user.update_attributes(params[:user])
       flash[:success] = "You've updated your account successfully."
       redirect_to user_path(@user)
